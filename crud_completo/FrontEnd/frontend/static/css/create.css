@@ -1,0 +1,115 @@
+/* General reset para evitar estilos por defecto del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilado para el cuerpo de la página */
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #eceff1, #ffffff);
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Encabezado principal */
+  h1 {
+    text-align: center;
+    color: #5c6bc0;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilado para el formulario principal */
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  form:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilado de etiquetas */
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #555;
+  }
+  
+  /* Estilado para los campos de texto */
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #b0bec5;
+    border-radius: 4px;
+    transition: border-color 0.2s ease;
+  }
+  
+  input[type="text"]:focus,
+  textarea:focus {
+    border-color: #5c6bc0;
+    outline: none;
+  }
+  
+  /* Botón de envío */
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #5c6bc0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3949ab;
+  }
+  
+  .button-container {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .btn-create {
+    display: inline-block;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-create:hover {
+    background-color: #45a049;
+  }
+  
+
+  /* Espaciado y mejor visibilidad */
+  textarea {
+    height: 100px;
+    resize: none;
+    font-size: 14px;
+  }
+  
+  /* Contenedor con un margen mínimo para una mejor presentación */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  

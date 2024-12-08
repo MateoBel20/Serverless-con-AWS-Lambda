@@ -1,0 +1,87 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  /* Botón de creación */
+  .button-container {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .btn-create {
+    display: inline-block;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-create:hover {
+    background-color: #45a049;
+  }
+  
+  /* Tabla */
+  table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .no-tasks {
+    text-align: center;
+    color: #888;
+  }
+
+  
+  .editar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    padding: 5px;
+  }
+  
+  .editar:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+  }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tareas CRUD</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/index.css') }}"
+    />
+  </head>
+  <body>
+    <!-- Encabezado -->
+    <header>
+      <h1>Tareas CRUD</h1>
+    </header>
+    <div class="button-container">
+      <a href="{{ url_for('create') }}" class="btn-create">Crear Nueva Tarea</a>
+    </div>
+    <!-- Tabla de Tareas -->
+    <main>
+      <section class="tasks-section">
+        <table class="tasks-table">
+          <thead>
+            <tr>
+              <th>Título</th>
+              <th>Descripción</th>
+              <th>Fecha de Creación</th>
+              <th>Estado</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for task in tasks %}
+            <tr>
+              <td>{{ task['title'] }}</td>
+              <td>{{ task['description'] }}</td>
+              <td>{{ task['createAT'] }}</td>
+              <td>{{ 'Completado' if task['done'] else 'Pendiente' }}</td>
+              <td>
+                <!-- Botón Editar -->
+                <button class="editar">
+                  <a href="{{ url_for('edit', id=task['id']) }}" class="btn-action">Editar</a>
+                </button>
+                
+                <!-- Botón Eliminar -->
+                <button class="eliminar">
+                  <a href="{{ url_for('delete', id=task['id']) }}" class="btn-action">Eliminar</a>
+                </button>
+              </td>
+            </tr>
+            {% else %}
+            <tr>
+              <td colspan="5" class="no-tasks">No hay tareas disponibles</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
